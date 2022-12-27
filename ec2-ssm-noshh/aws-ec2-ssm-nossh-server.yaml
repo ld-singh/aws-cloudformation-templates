@@ -102,7 +102,7 @@ Resources:
               - sts:AssumeRole
       Path: /
 
-  # Attaching an SG with NO Ingress ports open
+  # Attach an SG with NO Ingress ports open. I have opened 443 but there is no need of any inbound access
   Ec2InstanceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
